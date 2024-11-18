@@ -23,16 +23,10 @@ const About = () => {
         />
         <div className="about-text">
           <p>
-            Hello! I'm a Front-End Developer with a passion for creating
-            beautiful, functional, and user-centered digital experiences.
-            Currently in my 4th year at Universitas Klabat, I am honing my
-            skills and deepening my understanding of web technologies.
+            {about.p1}
           </p>
           <p>
-            I'm proficient in HTML, CSS, JavaScript, and various modern
-            frameworks. When I'm not coding, you can find me exploring new
-            technologies, contributing to open-source projects, or enjoying the
-            great outdoors.
+            {about.p2}
           </p>
         </div>
       </div>

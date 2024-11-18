@@ -2,7 +2,7 @@ const Header = () => {
   return (
     <header>
       <nav>
-        <div className="logo">YourName</div>
+        <div className="logo">Rusdi Nabut</div>
         <ul className="nav-links">
           <li>
             <a href="#home">Home</a>
@@ -14,7 +14,7 @@ const Header = () => {
             <a href="#projects">Projects</a>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <a href="#contact">Education</a>
           </li>
         </ul>
       </nav>
