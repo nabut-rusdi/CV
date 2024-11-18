@@ -1,19 +1,32 @@
+import { getDatabase, ref, onValue } from "firebase/database";
+import { useEffect, useState } from "react";
 const About = () => {
+  const [about, setAbout] = useState({});
+
+  useEffect(() => {
+    const db = getDatabase();
+    const aboutRef = ref(db, "about");
+
+    onValue(aboutRef, (snapshot) => {
+      const data = snapshot.val();
+      setAbout(data);
+    });
+  }, []);
+
   return (
     <section id="about" className="about">
       <h2>About Me</h2>
       <div className="about-content">
         <img
-          src="/placeholder.svg?height=300&width=300"
-          alt="Your Name"
+          src={`data:image/jpeg;base64, ${about.image}`}
           className="profile-image"
         />
         <div className="about-text">
           <p>
-            Hello! I'm a web developer with a passion for creating beautiful,
-            functional, and user-centered digital experiences. With 5 years of
-            experience in the field, I am always looking for new and innovative
-            ways to bring my clients' visions to life.
+            Hello! I'm a Front-End Developer with a passion for creating
+            beautiful, functional, and user-centered digital experiences.
+            Currently in my 4th year at Universitas Klabat, I am honing my
+            skills and deepening my understanding of web technologies.
           </p>
           <p>
             I'm proficient in HTML, CSS, JavaScript, and various modern

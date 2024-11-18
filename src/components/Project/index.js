@@ -8,7 +8,7 @@ const Project = () => {
           <div className="project-info">
             <h3>Project 1</h3>
             <p>A responsive e-commerce website built with React and Node.js.</p>
-            <a href="#" className="project-link">
+            <a src="/public/img/frontend.png" className="project-link">
               View Project
             </a>
           </div>

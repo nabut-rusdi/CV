@@ -310,3 +310,32 @@ footer p {
     text-align: center;
   }
 }
+.jenjang {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Styling untuk tiap item jenjang */
+.jenjang-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.jenjang-item:hover {
+  transform: translateY(-5px);
+}
+
+.jenjang-item h2 {
+  color: #4caf50;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.jenjang-item p {
+  font-size: 1em;
+  color: #555;
+}
